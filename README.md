@@ -10,19 +10,32 @@ From the data set notes: "The final two columns ending with “_adj” show the 
 
 The questions I set out to answer:
 
+### Limitations
+This analysis is dependent on a very limited dataset. After cleaning, the size of the set was reduced from over 10,000 values to under 4000. Most of the reduction came from removing invalid values in the budget and revenue columns (where the data == $0). 
+
+Additionally, this sample was not tested in relation to the general population to determine how representative it is of the whole. 
+
+### The questions I set out to answer:
+
 <ol>
 
 <li> <h3>Do actors matter?</h3>
 
 What is the average revenue of all the movies in which actors appear? Does sample size matter? What about minimum number of appearances?
 
->The sample size and choice of minimum number of appearances matters quite a bit in investigating this question.
+>If the dataset includes all possible movies (released after 1960), then Harrison Ford is by far the top earner in all instances.
 
->For example, with a sample size of 100 movies and a minimum of 4 appearances, Orlando Bloom has the highest average revenue per movie in which he appears. 
+>Limiting the release year and the sample size and choice of minimum number of appearances matters quite a bit in investigating this question. 
+
+>For example, for movies released after 1994 with a sample size of 100 movies and a minimum of 4 appearances, Orlando Bloom has the highest average revenue per movie in which he appears. 
 
 >On the other hand, not limiting the sample (using all 2962 movies in the cleaned dataset) results in a more expected result, with Johnny Depp having the highest average revenue over the 30 movies he's appeared in, almost $300 million per movie.
 
 >Overall this is a fairly good way to query actor's affect on the earnings of the movies in which they appear. Samuel L. Jackson has appeared in 40 movies, but his average revenue per movie is just under $200 million.
+
+>Although Harrison Ford is the clear leader in this analysis, there are other variables that may confound the relationship and not necessarily result in "hire Harrison, make money".
+
+>Just because an actor appears in movies that generate high revenue does not mean that they are the reason. They may be good at picking great movies that will make a lot of money, or are part of franchises that become classics. For instance, Harrison Ford in Star Wars, Indiana Jones, and Jack Ryan movies, and more recently the cast of the Harry Potter movies. 
 
 
 <li> <h3>Can you buy a high-revenue movie?</h3>
@@ -50,4 +63,3 @@ Can we predict revenue based on what we know about the popularity of a movie?
 * Which genre has the most movies in this dataset?
 
 </ol>
-
